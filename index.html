@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presence Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Presence Tracker</h1>
+        
+        <!-- Move-in Date -->
+        <div class="form-group">
+            <label for="moveInDate">Move-in Date:</label>
+            <input type="date" id="moveInDate">
+        </div>
+
+        <!-- Trips List -->
+        <div id="tripsList"></div>
+
+        <!-- Add Trip Button -->
+        <button id="addTripButton">Add Trip</button>
+
+        <!-- Calculate Presence Button -->
+        <button id="calculateButton">Calculate Presence</button>
+
+        <!-- Table for Trip Data -->
+        <table id="travelTable">
+            <thead>
+                <tr>
+                    <th>Date Left</th>
+                    <th>Date Returned</th>
+                    <th>Countries Visited</th>
+                    <th>Trip Duration (days)</th>
+                    <th>Presence Days</th>
+                </tr>
+            </thead>
+            <tbody id="tripData">
+                <!-- Trip rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

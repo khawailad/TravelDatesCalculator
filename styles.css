@@ -1,0 +1,77 @@
+/* Container for the form */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for individual trip elements */
+.trip {
+    margin-bottom: 20px; /* Spacing between each trip form */
+}
+
+/* Style for the form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Adjust for individual input fields inside trip form */
+.trip input {
+    margin-bottom: 10px;
+    width: 200px; /* Adjust width of the inputs */
+}
+
+/* Add space between labels and inputs */
+label {
+    margin-bottom: 5px;
+}
+
+/* For trip input fields (start date, end date, and countries visited) */
+.trip div {
+    margin-bottom: 10px;
+}
+
+/* Use flexbox to align the form fields horizontally */
+.trip div label {
+    display: inline-block;
+    width: 120px; /* Set a fixed width for labels to align inputs */
+}
+
+.trip div input {
+    display: inline-block;
+    width: 180px; /* Set a fixed width for inputs to align with labels */
+}
+
+/* Align the buttons (Calculate, Add Trip) horizontally */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adjust table layout */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Ensure table has some spacing and alignment */
+table th {
+    background-color: #f2f2f2;
+}
+
+#tripData td {
+    word-break: break-word;
+}
